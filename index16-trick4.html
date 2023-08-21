@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+        }
+        #list{
+            width: 300px;
+            background: rgb(225, 225, 225);
+            position: fixed;
+            bottom: 0;right: 0;
+        }
+        .li{
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 10px 0;
+            border-radius: 4px;
+            list-style-type: none;
+        }
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="_rand()">click to random number</button>
+    <ul id="list">
+
+    </ul>
+    <script>
+        let r
+        let b
+        let g
+        function _rand(){
+            randColor()           
+            // end generate color rand
+
+            let _li = document.createElement('li')
+            _li.classList.add('li')
+            _li.innerHTML='<a class="link" href="https://trainingsitedesign.ir">hello js</a>'
+
+            _li.style.backgroundColor='rgb('+r+','+g+','+b+')'
+
+
+            // end generate element
+
+            document.getElementById('list').appendChild(_li)
+
+            // end add child
+        }
+
+        function randColor(){
+            r = parseInt(Math.random()*256)
+            g = parseInt(Math.random()*256)
+            b = parseInt(Math.random()*256)
+        }
+    </script>
+</body>
+</html>

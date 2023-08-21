@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    <li onclick="mht(this)">menu1</li>
+    <li onclick="mht(this)">menu2</li>
+    <li onclick="mht(this)"><a href="">menu3</a>
+        <ul>
+            <li>1submenu</li>
+            <li>2submenu</li>
+            <li>3submenu</li>
+            <li>4submenu</li>
+            <li>5submenu</li>
+            <li>6submenu</li>
+        </ul>
+
+    </li>
+    <li>menu4</li>
+</ul>
+<script>
+    function mht(s){
+        console.log(s);
+        s.style.color='pink'
+        let_child=s.children
+        _child[0].style.color='green'
+
+    }
+</script>
+</body>
+</html>

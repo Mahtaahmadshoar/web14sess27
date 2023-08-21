@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>menu</li>
+            <li>menu</li>
+            <li id="target">menu</li>
+            <a href="">test1</a>
+            <a href="">test2</a>
+            <li>menu</li>
+        </ul>
+    </div>
+    <script>
+        let target=document.getElementById('target')
+        console.log(target.parentElement.parentElement);
+       let_child= target.children
+       console.log(_child[1]);
+       console.log(target.nextElementSibling);
+       console.log(target.previousElementSibling);
+       document.title='mahta ar'
+       console.log(document.domain);
+    </script>
+</body>
+</html>

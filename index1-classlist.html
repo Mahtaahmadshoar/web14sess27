@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        txt{
+            background: #000;
+            color: white;
+            font-size: 60px;
+
+        }
+        .mht{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo" class="mht">Mahta Ahmadshoar</h1>
+    <script>
+        document.getElementById('demo').classList.add('txt')
+        setTimeout(() => {
+
+             document.getElementById('demo').classList.remove('txt')
+        }, 2000);
+    </script>
+    
+</body>
+</html>
